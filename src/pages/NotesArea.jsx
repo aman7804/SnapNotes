@@ -68,7 +68,11 @@ const NotesArea = ({ searchResult = [] }) => {
       >
         <Stack spacing={2}>
           <Box sx={{ display: "flex", justifyContent: "center" }}>
-            <Box sx={{ width: 600 }}>
+            <Box
+              sx={{
+                width: { xs: 200, sm: 500, md: 600 },
+              }}
+            >
               <TextField
                 fullWidth
                 label="Outlined"
@@ -78,7 +82,7 @@ const NotesArea = ({ searchResult = [] }) => {
             </Box>
           </Box>
           {searchResult.length != 0 ? (
-            <Grid container spacing={2}>
+            <Grid container spacing={2} justifyContent="center">
               {searchResult.map((note) => (
                 <Grid item xs={12} sm={6} md={4} key={note.id}>
                   <NoteCard
@@ -93,7 +97,11 @@ const NotesArea = ({ searchResult = [] }) => {
           ) : (
             <>
               {/* pinned notes */}
-              <Grid container spacing={2}>
+              <Grid
+                container
+                spacing={2}
+                sx={{ display: "flex", justifyContent: "center" }}
+              >
                 {pinnedNotes.map((note) => (
                   <Grid item xs={12} sm={6} md={4} key={note.id}>
                     <NoteCard
@@ -107,7 +115,11 @@ const NotesArea = ({ searchResult = [] }) => {
               </Grid>
 
               {/* regular notes */}
-              <Grid container spacing={2}>
+              <Grid
+                container
+                spacing={2}
+                sx={{ display: "flex", justifyContent: "center" }}
+              >
                 {regularNotes.map((note) => (
                   <Grid item xs={12} sm={6} md={4} key={note.id}>
                     <NoteCard

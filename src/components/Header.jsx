@@ -13,7 +13,7 @@ function Header({ setSearchResult }) {
         boxShadow: "none",
       }}
     >
-      <Container maxWidth="lg">
+      <Container maxWidth="lg" disableGutters>
         <Toolbar disableGutters>
           {/* Left Logo */}
           <NoteAltIcon sx={{ mr: 1, fontSize: 28 }} />
