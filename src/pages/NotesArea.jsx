@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import NoteCard from "./NoteCard";
+import NoteCard from "../components/NoteCard";
 import { Box, Grid, Modal, Stack, TextField, Typography } from "@mui/material";
-import NoteModal from "./NoteModal";
-import DeleteModal from "./DeleteModal";
+import NoteModal from "../components/NoteModal";
+import DeleteModal from "../components/DeleteModal";
 import { getAllNotes, getNote } from "../utils/util";
 const NotesArea = ({ searchResult = [] }) => {
   const [notes, setNotes] = useState([]);
