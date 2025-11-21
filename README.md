@@ -1,40 +1,16 @@
+# React + Vite
 
-## **SnapNotes**
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Note taking app for students, built using React, MUI, LocalStorage.
+Currently, two official plugins are available:
 
-## **Description**
-- I have created this Project to practice project building step by step - requirememt analysis, scope, planning/estimation, development, testing and deployment.
-- It has basic features as CRUD operations, search and pin notes.
-## **Table of Contents**
-Installation
-Tech Stack
-Contact Information
-Acknowledgments
-- [Installation](#installation)
-- [Tech Stack](#techStack)
-- [Contact Information](#contactInformation)
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
+## React Compiler
 
-## **Installation**
-- Clone repo
-- Install packages: ```npm install```
-- Run dev server: ```npm run dev```
+The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
 
-## **Features**
-- Add note
-- Edit note
-- Delete note
-- Pin note
-- Search
-- Responsive UI
+## Expanding the ESLint configuration
 
-## **Tech Stack**
-- React
-- MUI
-- LocalStorage
-- Vite
-
-## **Contact Information**
-- Email: bhateriyaaman@gmail.com
-- GitHub: https://github.com/aman7804
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
