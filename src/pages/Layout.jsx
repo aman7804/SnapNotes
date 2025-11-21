@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import NotesArea from "../components/NotesArea";
+import NotesArea from "./NotesArea";
 import { Box } from "@mui/material";
 import Header from "../components/Header";
 
